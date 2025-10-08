@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPCC</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.3;
+        }
+        .Masked {
+            color: #4285F4; 
+        }
+        .aaai {
+            color: #E44D26; 
+            font-size: 2em;
+            margin: 0.5em 0 1em;
+        }
+        .authors {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .authors a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+        .authors a:hover {
+            text-decoration: underline;
+        }
+        .affiliations {
+            font-size: 1em;
+            margin-bottom: 2em;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 3em;
+        }
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .tldr {
+            text-align: left;
+            margin-top: 2em;
+        }
+        .tldr h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+        }
+        .tldr ol {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activating Visual Context and Commonsense Reasoning through<br> <span class="Masked">Masked Prediction</span> in VLMs</h1>
+    <div class="aaai">AAAI 2026 in process</div>
+    <div class="authors">
+        <a href="#">Jiaao Yu<sup>1</sup></a>, 
+        <a href="#">et al.</a>, 
+
+    </div>
+    <div class="affiliations">
+        <sup>1</sup>East China Normal University, China
+    </div>
+    <div class="buttons">
+        <a href="#" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            arXiv
+        </a>
+        <a href="#" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                <path d="M4 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1H4V4zm0 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1H4V6zm0 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1H4V8zm0 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v1H4v-1z"/>
+            </svg>
+            Paper
+        </a>
+        <a href="#" class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 11.5v-6l-2.25 3-2.25-3v6l4.5 2z"/>
+            </svg>
+            Code
+        </a>
+    </div>
+
+    <br><br>
+    <center><img src="./0.png" width="500px">
+    </center>
+
+    <div class="tldr">
+        <h2>TL;DR</h2>
+        <ol>
+            <li>We propose a fine-tuning task, Masked Prediction via Context and Commonsense (MPCC), which activates visual context and commonsense reasoning through masked prediction, thereby enhancing the generalized reasoning ability of VLMs.</li>
+            <li>We explore the impact of reasoning-guided fine-tuning strategies on the performance and generalization of VLMs. Additionally, we propose RFT with prior sampling to effectively activate reasoning.</li>
+            <li>We contribute MPCC-Eval, a benchmark designed to assess multimodal models’ ability to perform masked prediction with context and commonsense awareness.</li>
+        </ol>
+    </div>
+    
+
+    <br><br>
+    <h4>MPCC-Eval</h4>
+    <p>The MPCC-Eval benchmark creation pipeline filters and curates images by difficulty, forming three subsets: easy, moderate, and hard. It includes two types of single-choice question formats.</p>
+    <center><img src="./1.png" width="800px">
+    </center>
+
+    <br><br>
+    <h4>Fine-tuning Strategies</h4>
+    <p>Fine-tuning Strategies on MPCC Task. (a) SFT: Construct and distill reasoning data via supervised fine-tuning. (b)GRPO-based RFT: Activate reasoning with verifiable rewards. (c) Proposed RFT with Prior Sampling: Use annotated reasoning data to replace one sampling step.</p>
+    <center><img src="./2.png" width="800px">
+    </center>
+    <br><br>
+
+    <div class="tldr">
+        <h2>ABSTRACT</h2>
+        Recent breakthroughs in reasoning models have markedly advanced the reasoning capabilities of large language models, particularly via training on tasks with verifiable rewards. Yet, a significant gap persists in their adaptation to real-world multimodal scenarios, most notably, vision-language tasks, due to a heavy focus on single-modal language settings. While efforts to transplant reinforcement learning techniques from NLP to Visual Language Models (VLMs) have emerged, these approaches often remain confined to perception-centric tasks or reduce images to textual summaries, failing to fully exploit visual context and commonsense knowledge, ultimately constraining the generalization of reasoning capabilities across diverse multimodal environments. To address this limitation, we introduce a novel fine-tuning task, Masked Prediction via Context and Commonsense (MPCC), which forces models to integrate visual context and commonsense reasoning by reconstructing semantically meaningful content from occluded images, thereby laying the foundation for generalized reasoning. To systematically evaluate the model’s performance in generalized reasoning, we developed a specialized evaluation benchmark, MPCC-Eval, and employed various fine-tuning strategies to guide reasoning. Among these, we introduced an innovative training method, Reinforcement Fine-Tuning with Prior Sampling, which not only enhances model performance but also improves its generalized reasoning capabilities in out-of-distribution (OOD) and cross-task scenarios. Code and data are available in the supplementary materials.
+    </div>
+
+</body>
+</html>
